@@ -1,3 +1,7 @@
+.blue-text {
+  color: #fff !important;
+}
+
 /* Custom Stylesheet */
 /**
  * Use this file to override Materialize files so you can update
@@ -6,17 +10,84 @@
  * Made By MaterializeCSS.com
  */
 
+
+ 
 html {
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 17px;
   overflow: scroll;
 }
 
 /* Materialize stuff */
 
+html {
+  color: #c0c0c0 !important;
+  background: #333 !important;
+}
+
+.sidenav li > a > i, .sidenav li > a, .sidenav li > a li > a, .sidenav li > a > i.material-icons {
+  color: #fff;
+}
+
+.sidenav {
+  background-color: #222;
+}
+
+.page-footer {
+  margin: 0;
+  background-color: #222 !important;
+}
+
+.blue {
+  background-color: #222 !important;
+}
+
+.collection .collection-item {
+  background-color: #222;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.collection.with-header .collection-header {
+  background-color: #222;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.green {
+  color: #000;
+}
+
+.yellow {
+  color: #000;
+}
+
+
+.orange {
+  color: #000;
+}
+
+.red {
+  color: #000;
+}
+
+.actually-red {
+  color: #ea454b
+}
+
+.card {
+  background-color: #222;
+}
+
+a {
+  color: #fff !important;
+}
+
+.collection {
+  background: #222;
+}
+
 nav ul a,
 nav .brand-logo {
-  color: #fff;
+/*  color: #444;*/
 }
 
 p {
@@ -31,7 +102,9 @@ p {
   min-height: 750px;
   line-height: 0;
   height: auto;
-  color: rgba(255,255,255,.9);
+}
+.parallax-container.small-parallax-container {
+  min-height: 0;
 }
   .parallax-container .section {
     width: 100%;
@@ -60,6 +133,16 @@ p {
   font-size: inherit;
 }
 
-footer.page-footer {
+.page-footer {
   margin: 0;
+}
+
+.full-height {
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+
+.white-text {
+  color: #fff !important;
 }
