@@ -10,24 +10,22 @@
  * Made By MaterializeCSS.com
  */
 
+@charset "UTF-8";
 
- 
 @font-face {
     font-family: 'rodin';
-    src: url('/css/RodinNTLGPro-B-AlphaNum.woff2') format('woff2'),
-        url('/css/RodinNTLGPro-B-AlphaNum.woff') format('woff');
+    src: url('https://mariocube.com/css/RodinNTLGPro-B-AlphaNum.woff2') format('woff2'),
+         url('https://mariocube.com/css/RodinNTLGPro-B-AlphaNum.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
-@charset "UTF-8";
-
 html {
-	font-family:"rodin";
-	margin:0;
-	padding:0;
-	background-color: #ffffff;
+    font-family: 'rodin';
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
 }
 
 /* Materialize stuff */
@@ -185,6 +183,7 @@ animation: spin 1s linear infinite;
 transform: rotate(360deg);
 }
 }
+
 
 
 
