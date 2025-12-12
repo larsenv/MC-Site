@@ -13,10 +13,9 @@
 
  
 @font-face {
-    font-family: 'Wii NTLG PGothic Regular';
-    src: url('https://manual.mariocube.com/font/WiiNTLGPGothic-Regular.woff2') format('woff2'),
-        url('https://manual.mariocube.com/font/WiiNTLGPGothic-Regular.woff') format('woff'),
-        url('https://manual.mariocube.com/font/WiiNTLGPGothic-Regular.ttf') format('truetype');
+    font-family: '';
+    src: url('RodinNTLGPro-B-AlphaNum.woff2') format('woff2'),
+        url('RodinNTLGPro-B-AlphaNum.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -186,4 +185,5 @@ animation: spin 1s linear infinite;
 transform: rotate(360deg);
 }
 }
+
 
