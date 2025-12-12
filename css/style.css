@@ -13,7 +13,7 @@
 
  
 @font-face {
-    font-family: '';
+    font-family: 'rodin';
     src: url('/css/RodinNTLGPro-B-AlphaNum.woff2') format('woff2'),
         url('/css/RodinNTLGPro-B-AlphaNum.woff') format('woff');
     font-weight: normal;
@@ -24,6 +24,7 @@
 @charset "UTF-8";
 
 html {
+	font-family:"rodin";
 	margin:0;
 	padding:0;
 	background-color: #ffffff;
@@ -184,6 +185,7 @@ animation: spin 1s linear infinite;
 transform: rotate(360deg);
 }
 }
+
 
 
 
