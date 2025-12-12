@@ -27,7 +27,6 @@ html {
 	margin:0;
 	padding:0;
 	background-color: #ffffff;
-	font-family:"Wii NTLG PGothic";
 }
 
 /* Materialize stuff */
@@ -185,6 +184,7 @@ animation: spin 1s linear infinite;
 transform: rotate(360deg);
 }
 }
+
 
 
 
