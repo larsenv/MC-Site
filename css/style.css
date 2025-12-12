@@ -12,10 +12,23 @@
 
 
  
+@font-face {
+    font-family: 'Wii NTLG PGothic Regular';
+    src: url('https://manual.mariocube.com/font/WiiNTLGPGothic-Regular.woff2') format('woff2'),
+        url('https://manual.mariocube.com/font/WiiNTLGPGothic-Regular.woff') format('woff'),
+        url('https://manual.mariocube.com/font/WiiNTLGPGothic-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@charset "UTF-8";
+
 html {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 17px;
-  overflow: scroll;
+	margin:0;
+	padding:0;
+	background-color: #ffffff;
+	font-family:"Wii NTLG PGothic";
 }
 
 /* Materialize stuff */
@@ -173,3 +186,4 @@ animation: spin 1s linear infinite;
 transform: rotate(360deg);
 }
 }
+
