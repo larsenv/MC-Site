@@ -1,4 +1,4 @@
-.blue-text {
+`.blue-text {
   color: #fff !important;
 }
 
@@ -14,11 +14,16 @@
 
 @font-face {
     font-family: 'rodin';
+    src: url('https://mariocube.com/css/RodinNTLGPro-DB-AlphaNum.woff2') format('woff2'),
+         url('https://mariocube.com/css/RodinNTLGPro-dB-AlphaNum.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'rodin';
     src: url('https://mariocube.com/css/RodinNTLGPro-B-AlphaNum.woff2') format('woff2'),
          url('https://mariocube.com/css/RodinNTLGPro-B-AlphaNum.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+    font-weight: 700;
 }
 
 html {
@@ -183,6 +188,7 @@ animation: spin 1s linear infinite;
 transform: rotate(360deg);
 }
 }
+
 
 
 
