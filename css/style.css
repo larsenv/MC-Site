@@ -15,7 +15,7 @@
 @font-face {
     font-family: 'rodin';
     src: url('https://mariocube.com/css/RodinNTLGPro-DB-AlphaNum.woff2') format('woff2'),
-         url('https://mariocube.com/css/RodinNTLGPro-dB-AlphaNum.woff') format('woff');
+         url('https://mariocube.com/css/RodinNTLGPro-DB-AlphaNum.woff') format('woff');
     font-weight: 400;
 }
 
@@ -188,6 +188,7 @@ animation: spin 1s linear infinite;
 transform: rotate(360deg);
 }
 }
+
 
 
 
