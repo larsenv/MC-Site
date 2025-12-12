@@ -5,27 +5,74 @@ title: MarioCube - The Premier Wii/GC Site
 
   <div id="index-banner" class="parallax-container">
   	{% include parallax_nav.html %}
+    <style>
+        /* Stronger text contrast */
+        #index-banner .white-text {
+          text-shadow: 0 2px 6px rgba(0, 0, 0, 0.75);
+        }
+        
+        /* Card-like backdrop behind centered content */
+        #index-banner .container {
+          background: rgba(0, 0, 0, 0.4);
+          padding: 2rem 1rem;
+          border-radius: 12px;
+          backdrop-filter: blur(6px);
+        }
+        
+        /* Improve button contrast */
+        #index-banner .btn-large {
+          box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+          font-weight: 600;
+        }
+        
+        /* Stronger logo visibility */
+        .shadowfilter {
+          filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 1));
+        }
+        
+        /* Parallax image darken overlay */
+        .parallax img {
+          filter: brightness(0.35);
+        }
+    </style>
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <img src="/images/MarioCube_Small.png" width="25%" alt="MarioCube" />
-          <h3 class="header center white-text">Welcome to MarioCube!</h3>
+          <img width="50%" src="https://repo.mariocube.com/MarioCube%20Logo.png" class="shadowfilter">
+          <b><h3 class="header center white-text">Welcome to MarioCube!</h3></b>
         </div>
         <div class="row center">
-          <p class="header col s12 light white-text center">MarioCube is a repository focused on preserving Wii and GameCube goodies.</p>
+          <p class="header col s12 light white-text" 
+             style="font-weight:bold; text-shadow:0 2px 6px rgba(0,0,0,0.8);">
+            MarioCube is a repository focused on preserving Wii and GameCube goodies.
+          </p>
         </div>
         <div class="row center">
-          <a href="https://bit.ly/3BpTWYi" id="download-button" class="btn-large waves-effect waves-light yellow lighten-1 black-text">View Repository</a>
+          <a href="https://bit.ly/3BpTWYi" class="btn-large waves-effect waves-light yellow lighten-1 black-text"
+             style="box-shadow:0 4px 12px rgba(0,0,0,0.5); font-weight:600;">
+            View Repository
+          </a>
         </div>
         <div class="row center">
-          <a href="https://repo.mariocube.com/" id="download-button" class="btn-large waves-effect waves-light green lighten-1">Open Directory Mirror</a>
+          <a href="https://repo.mariocube.com/" class="btn-large waves-effect waves-light green lighten-1"
+             style="box-shadow:0 4px 12px rgba(0,0,0,0.5); font-weight:600;">
+            Open Directory Mirror
+          </a>
         </div>
         <div class="row center">
-          <a href="https://games.mariocube.com/" id="download-button" class="btn-large waves-effect waves-light orange lighten-1">Get Wii, Wii U, GC and DS Games</a> <a href="https://manual.mariocube.com/" id="download-button"
-            class="btn-large waves-effect waves-light orange lighten-1">Wii Manuals</a>
+          <a href="https://games.mariocube.com/" class="btn-large waves-effect waves-light orange lighten-1"
+             style="box-shadow:0 4px 12px rgba(0,0,0,0.5); font-weight:600; margin-right:10px;">
+            Get Wii, Wii U, GC and DS Games
+          </a>
+          <a href="https://manual.mariocube.com/" class="btn-large waves-effect waves-light orange lighten-1"
+             style="box-shadow:0 4px 12px rgba(0,0,0,0.5); font-weight:600;">
+            Wii Manuals
+          </a>
         </div>
         <div class="row center">
-          <a href="mailto:admin@mariocube.com" id="download-button" class="btn-large waves-effect waves-light blue lighten-1">Contact</a>
+          <small style="color:white; text-shadow:0 1px 4px rgba(0,0,0,0.8);">
+            Questions? Issues? Contact us at admin@mariocube.com
+          </small>
         </div>
       </div>
     </div>
@@ -98,3 +145,4 @@ title: MarioCube - The Premier Wii/GC Site
   </div>
  </div>
 </div>
+
