@@ -139,6 +139,10 @@ p {
   #index-banner .section {
     top: 0;
   }
+
+  .shadowfilter {
+    width: 85%;
+  }
 }
 
 .icon-block {
