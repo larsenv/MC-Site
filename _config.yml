@@ -19,9 +19,6 @@ title: MarioCube
 email: admin@mariocube.com
 url: "https://mariocube.com/"
 
-# Social
-twitterUsername: MarioCubeRepo
-
 defaults:
   -
     scope:
