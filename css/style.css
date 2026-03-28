@@ -30,12 +30,14 @@ html {
     font-family: 'rodin';
     margin: 0;
     padding: 0;
+    background-color: #ffffff;
 }
 
 /* Materialize stuff */
 
 html {
   color: #c0c0c0 !important;
+  background: #333 !important;
 }
 
 .sidenav li > a > i, .sidenav li > a, .sidenav li > a li > a, .sidenav li > a > i.material-icons {
@@ -46,17 +48,13 @@ html {
   background-color: #222;
 }
 
-.page-footer, .page-footer.blue {
+.page-footer {
   margin: 0;
-  background-color: #1976d2 !important;
+  background-color: #222 !important;
 }
 
-.blue, .blue.darken-2 {
-  background-color: #1976d2 !important;
-}
-
-.btn-large.blue, .btn-large.blue.darken-2 {
-  background-color: #1976d2 !important;
+.blue {
+  background-color: #222 !important;
 }
 
 .collection .collection-item {
@@ -119,9 +117,6 @@ p {
   min-height: 750px;
   line-height: 0;
   height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 .parallax-container.small-parallax-container {
   min-height: 0;
