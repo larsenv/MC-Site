@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+class Object; def tainted?; false; end; def taint; self; end; def untaint; self; end; end
+
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
@@ -10,6 +12,8 @@ source 'https://rubygems.org'
 # Happy Jekylling!
 gem 'jekyll'
 gem 'minima'
+gem 'csv'
+gem 'bigdecimal'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
