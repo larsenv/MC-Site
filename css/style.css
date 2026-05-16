@@ -51,6 +51,13 @@ html {
   padding-top: 0;
 }
 
+.footer-copyright {
+  padding: 0 !important;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
 .collection .collection-item {
   background-color: #222;
   border-bottom: 1px solid #444;
