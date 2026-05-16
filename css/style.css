@@ -49,17 +49,29 @@ html {
 
 .page-footer {
   margin: 0;
-  padding-top: 20px;
+  padding-top: 0;
 }
 
 .collection .collection-item {
   background-color: #222;
   border-bottom: 1px solid #444;
+  padding: 15px 20px;
+  display: block;
 }
 
 .collection.with-header .collection-header {
   background-color: #222;
   border-bottom: 1px solid #444;
+}
+
+.yellow.accent-4 {
+  background-color: #ffd600 !important;
+}
+.green.accent-4 {
+  background-color: #00c853 !important;
+}
+.orange.accent-4 {
+  background-color: #ffab00 !important;
 }
 
 .actually-red {
@@ -128,10 +140,6 @@ p {
 }
 .icon-block .material-icons {
   font-size: inherit;
-}
-
-.page-footer {
-  margin: 0;
 }
 
 .full-height {
