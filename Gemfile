@@ -10,6 +10,8 @@ source 'https://rubygems.org'
 # Happy Jekylling!
 gem 'jekyll'
 gem 'minima'
+gem 'csv'
+gem 'bigdecimal'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do

@@ -10,16 +10,53 @@
 	<meta name="copyright" content="&copy; MarioCube"/>
 	<meta name="robots" content="index, follow"/>
 	<meta name="subject" content="Wii &amp; GameCube Modding">
-	<meta name="keywords" content="Nintendo, Wii, GameCube">
-	<meta name="description" content="The premier repository of Wii and GameCube files!">
+	<meta name="keywords" content="Nintendo, Wii, GameCube, Modding, Homebrew, WADs, ROMs, Preservation">
+	<meta name="description" content="MarioCube is the premier repository for Wii and GameCube modding, homebrew, and preservation. Explore our comprehensive collection of files, manuals, and community resources.">
 	<meta name="classification" content="MarioCube is a repository focused on preserving Wii and GameCube goodies. We also have a wiki dedicated to obscure history of game consoles.">
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
 
   <!-- Open Graph Tags -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="{{ page.title }}" />
-  <meta property="og:image" content="/images/MarioCube_small.png" />
-  <meta property="og:locale" content="en" />
+  <meta property="og:description" content="The premier repository for Wii and GameCube goodies." />
+  <meta property="og:image" content="{{ site.url }}/images/MarioCube.png" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
+  <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="{{ site.title }}" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="The premier repository for Wii and GameCube goodies.">
+  <meta name="twitter:image" content="{{ site.url }}/images/MarioCube.png">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "MarioCube",
+    "url": "{{ site.url }}",
+    "description": "The premier repository for Wii and GameCube goodies.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://repo.mariocube.com/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "MarioCube",
+    "url": "{{ site.url }}",
+    "logo": "{{ site.url }}/images/MarioCube.png",
+    "sameAs": [
+      "https://discord.gg/mariocube"
+    ]
+  }
+  </script>
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -37,7 +74,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
   </noscript>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.3.3/dist/css/materialize.min.css">
   <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
   <!-- Font Awesome -->

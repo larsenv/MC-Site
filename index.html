@@ -3,123 +3,174 @@ layout: index
 title: MarioCube - The Premier Wii/GC Site
 ---
 
-  <div id="index-banner" class="parallax-container">
+  <section id="index-banner" class="parallax-container">
   	{% include parallax_nav.html %}
     <style>
         /* Stronger text contrast */
         #index-banner .white-text {
-          text-shadow: 0 2px 6px rgba(0, 0, 0, 0.75);
+          text-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
         }
         
-        /* Improve button contrast */
+        /* Modern button styling */
         #index-banner .btn-large {
-          box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-          font-weight: 600;
+          border-radius: 8px;
+          text-transform: none; /* Disable all caps */
+          letter-spacing: 0.5px;
+          margin: 5px;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        #index-banner .btn-large:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 16px rgba(0,0,0,0.4);
         }
         
-        /* Stronger logo visibility */
+        /* Logo glow effect */
         .shadowfilter {
-          filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 1));
+          filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.4));
+          max-width: 100%;
+          height: auto;
+        }
+
+        /* Improved spacing */
+        .section-padding {
+          padding-top: 4rem;
+          padding-bottom: 4rem;
+        }
+
+        .card {
+          border-radius: 12px;
+          overflow: hidden;
+        }
+
+        .discord-container {
+          position: relative;
+          width: 100%;
+          padding-bottom: 500px;
+          height: 0;
+        }
+
+        .discord-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+
+        .community-card {
+          background-color: #222;
+          padding: 20px;
+          border-radius: 12px;
         }
     </style>
     <div class="section no-pad-bot">
       <div class="container">
+        <br><br>
         <div class="row center">
-          <img width="50%" src="https://repo.mariocube.com/MarioCube%20Logo.png" class="shadowfilter">
-          <b><h3 class="header center white-text">Welcome to MarioCube!</h3></b>
+          <img src="/images/MarioCube.png" alt="MarioCube Logo" class="shadowfilter" style="width: 450px;">
+          <h1 class="header center white-text text-lighten-2" style="font-weight: 800; font-size: 3.5rem;">Welcome to MarioCube!</h1>
         </div>
         <div class="row center">
-          <p class="header col s12 light white-text" 
-             style="font-weight:bold; text-shadow:0 2px 6px rgba(0,0,0,0.8);">
-            MarioCube is a repository focused on preserving Wii and GameCube goodies.
-          </p>
+          <h5 class="header col s12 light white-text">
+            The premier repository for Wii and GameCube goodies.
+          </h5>
         </div>
-        <div class="row center">
-          <a href="https://repo.mariocube.com/" class="btn-large waves-effect waves-light yellow lighten-1 black-text"
-             style="box-shadow:0 4px 12px rgba(0,0,0,0.5); font-weight:600;">
-            View Repository
-          </a>
+        <div class="row center" style="margin-top: 2rem;">
+          <div class="col s12">
+            <a href="https://repo.mariocube.com/" class="btn-large waves-effect waves-light yellow accent-4 black-text">
+              <i class="fas fa-folder-open left"></i> View repository
+            </a>
+            <a href="https://games.mariocube.com/" class="btn-large waves-effect waves-light green accent-4">
+              <i class="fas fa-gamepad left"></i> Get games
+            </a>
+            <a href="https://manual.mariocube.com/" class="btn-large waves-effect waves-light orange accent-4">
+              <i class="fas fa-book left"></i> Wii manuals
+            </a>
+          </div>
         </div>
-        <div class="row center">
-          <a href="https://games.mariocube.com/" class="btn-large waves-effect waves-light green lighten-1"
-             style="box-shadow:0 4px 12px rgba(0,0,0,0.5); font-weight:600; margin-right:10px;">
-            Get Wii, Wii U, GC and DS Games
-          </a>
-        </div>
-        <div class="row center">
-          <a href="https://manual.mariocube.com/" class="btn-large waves-effect waves-light orange lighten-1"
-             style="box-shadow:0 4px 12px rgba(0,0,0,0.5); font-weight:600;">
-            Wii Manuals
-          </a>
-        </div>
-        <div class="row center">
-          <p style="color:white; text-shadow:0 1px 4px rgba(0,0,0,0.8);">
-            Questions or feedback? Email us at admin@mariocube.com
-          </p>
-        </div>
+        <br><br>
       </div>
     </div>
-    <div class="parallax" style="background-color:#000;"><img src="/images/background1.jpg" alt="GameCube"></div>
+    <div class="parallax"><img src="/images/background1.jpg" alt="GameCube Background"></div>
   </div>
 
-  <div class="container">
-    <div class="section">
+  <main class="container section-padding">
+    <section class="section">
 
       <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center blue-text"><i class="fas fa-gauge-simple-high" aria-hidden="true"></i></h2>
-            <h5 class="center">Fast</h5>
-
-            <p class="light">Download whatever you want from the repository, fast. With MarioCube hosted using a robust file server called copyparty you'll easily get what you want.</p>
-          </div>
+          <article class="card-panel center z-depth-2 hoverable" style="min-height: 280px;">
+            <i class="fas fa-gauge-simple-high large blue-text" aria-hidden="true"></i>
+            <h2 class="white-text" style="font-size: 1.5rem;">Fast performance</h2>
+            <p class="light grey-text text-lighten-1">Download whatever you want from the repository, fast. Hosted using copyparty for maximum efficiency and speed.</p>
+          </article>
         </div>
 
         <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center blue-text"><i class="fas fa-search" aria-hidden="true"></i></h2>
-            <h5 class="center">Rare Files</h5>
-
-            <p class="light">For the hardcore Wii/GC modders, we have some files here you can't find elsewhere (or is hard to find) on the Internet.</p>
-          </div>
+          <article class="card-panel center z-depth-2 hoverable" style="min-height: 280px;">
+            <i class="fas fa-search-plus large blue-text" aria-hidden="true"></i>
+            <h2 class="white-text" style="font-size: 1.5rem;">Rare files</h2>
+            <p class="light grey-text text-lighten-1">For the hardcore modders, we preserve obscure files you won't find anywhere else on the internet.</p>
+          </article>
         </div>
 
         <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center blue-text"><i class="fas fa-gamepad" aria-hidden="true"></i></h2>
-            <h5 class="center">WADs</h5>
+          <article class="card-panel center z-depth-2 hoverable" style="min-height: 280px;">
+            <i class="fas fa-cubes large blue-text" aria-hidden="true"></i>
+            <h2 class="white-text" style="font-size: 1.5rem;">Comprehensive WADs</h2>
+            <p class="light grey-text text-lighten-1">A comprehensive collection of WADs for your Wii, ready for installation and preservation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
 
-            <p class="light">You can find a bunch of WADs to install on your Wii here.</p>
+  <section class="grey darken-4 section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l7">
+          <h2 class="header blue-text" style="font-weight: 700;"><i class="fab fa-discord" aria-hidden="true"></i> Community support</h2>
+          <p class="white-text light" style="font-size: 1.2rem;">
+            Join our Discord server to chat with other modders, get help, or stay updated on the latest repository additions.
+          </p>
+          <div class="community-card z-depth-2">
+            <h3 class="white-text" style="font-size: 1.3rem;"><i class="fas fa-envelope-open-text blue-text" aria-hidden="true"></i> Get in touch</h3>
+            <p class="grey-text text-lighten-1">
+              Have questions or feedback? Feel free to reach out to us directly.
+            </p>
+            <a href="mailto:admin@mariocube.com" class="btn waves-effect waves-light blue darken-2" style="text-transform: none;">
+              <i class="fas fa-paper-plane left" aria-hidden="true"></i> Email us
+            </a>
+          </div>
+        </div>
+        <div class="col s12 l5">
+          <div class="discord-container z-depth-3" style="margin-top: 2rem;">
+            <iframe src="https://discord.com/widget?id=1458631906315862028&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" title="MarioCube Discord Widget"></iframe>
           </div>
         </div>
       </div>
     </div>
-    <div class="section center blue-text">
-      <div class="row center">
-        <h3 class="header center blue-text"><i class="fab fa-discord" aria-hidden="true"></i> Discord</h3>
-        <div class="col s12"><iframe src="https://discord.com/widget?id=1458631906315862028&theme=dark" width="610" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+  </section>
+
+  <section class="container section-padding">
+    <div class="section center">
+      <div class="row">
+        <h2 class="header white-text">What you can find here</h2>
+        <br>
+        <div class="col s12 m10 offset-m1">
+          <div class="collection z-depth-1" style="border: none;">
+            <a href="#!" class="collection-item white-text"><i class="fas fa-tools left" aria-hidden="true"></i> Development tools</a>
+            <a href="#!" class="collection-item white-text"><i class="fas fa-code left" aria-hidden="true"></i> Homebrew</a>
+            <a href="#!" class="collection-item white-text"><i class="fas fa-desktop left" aria-hidden="true"></i> PC applications</a>
+            <a href="#!" class="collection-item white-text"><i class="fas fa-box left" aria-hidden="true"></i> WADs</a>
+            <a href="#!" class="collection-item white-text"><i class="fas fa-font left" aria-hidden="true"></i> Nintendo fonts</a>
+            <a href="#!" class="collection-item white-text"><i class="fas fa-image left" aria-hidden="true"></i> Nintendo wallpapers</a>
+          </div>
+          <h3 class="header light blue-text text-lighten-2" style="margin-top: 2rem; font-size: 1.5rem;">...and much more!</h3>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-  <div class="section center">
-    <div class="row ">
-      <h3>What you can find here</h5>
-      <br>
-      <div class="col s12 center">
-      <ul class="collection">
-        <li class="collection-item">Development Tools</li>
-        <li class="collection-item">Homebrew</li>
-        <li class="collection-item">PC applications pertaining to the Wii and GameCube</li>
-        <li class="collection-item">WADs</li>
-        <li class="collection-item">Nintendo Fonts</li>
-        <li class="collection-item">Nintendo Wallpapers</li>
-      </ul>
-      <div class="row center">
-        <h5 class="header col s12 light">And much more</h5>
-      </div>
-    </div>
-  </div>
- </div>
-</div>
+  </section>
+

@@ -1,8 +1,7 @@
-(function($){
-  $(function(){
-
-    $('.button-collapse').sideNav();
-    $('.parallax').parallax();
-
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+document.addEventListener('DOMContentLoaded', function() {
+  var sidenavElems = document.querySelectorAll('.sidenav, .button-collapse');
+  var sidenavInstances = M.Sidenav.init(sidenavElems);
+  
+  var parallaxElems = document.querySelectorAll('.parallax');
+  var parallaxInstances = M.Parallax.init(parallaxElems);
+});
