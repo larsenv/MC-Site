@@ -1,4 +1,4 @@
-`.blue-text {
+.blue-text {
   color: #2196f3;
 }
 
@@ -60,23 +60,6 @@ html {
 .collection.with-header .collection-header {
   background-color: #222;
   border-bottom: 1px solid #444;
-}
-
-.green {
-  color: #000;
-}
-
-.yellow {
-  color: #000;
-}
-
-
-.orange {
-  color: #000;
-}
-
-.red {
-  color: #000;
 }
 
 .actually-red {
