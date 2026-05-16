@@ -70,14 +70,17 @@ html {
   border-bottom: 1px solid #444;
 }
 
-.yellow.accent-4 {
-  background-color: #ffd600 !important;
+.blue.darken-3 {
+  background-color: #1565c0 !important;
 }
 .green.accent-4 {
   background-color: #00c853 !important;
 }
 .orange.accent-4 {
   background-color: #ffab00 !important;
+}
+.yellow.accent-4 {
+  background-color: #ffd600 !important;
 }
 
 .actually-red {
