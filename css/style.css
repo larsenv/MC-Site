@@ -30,14 +30,13 @@ html {
     font-family: 'rodin';
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #333;
 }
 
 /* Materialize stuff */
 
 html {
-  color: #c0c0c0 !important;
-  background: #333 !important;
+  color: #c0c0c0;
 }
 
 .sidenav li > a > i, .sidenav li > a, .sidenav li > a li > a, .sidenav li > a > i.material-icons {
@@ -50,21 +49,17 @@ html {
 
 .page-footer {
   margin: 0;
-  background-color: #222 !important;
-}
-
-.blue {
-  background-color: #222 !important;
+  padding-top: 20px;
 }
 
 .collection .collection-item {
   background-color: #222;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #444;
 }
 
 .collection.with-header .collection-header {
   background-color: #222;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #444;
 }
 
 .green {
