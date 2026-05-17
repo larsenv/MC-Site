@@ -32,22 +32,29 @@ html {
     padding: 0;
     background-color: #333;
 }
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
 /* Materialize stuff */
 
 html {
   color: #c0c0c0;
 }
 
-.sidenav li > a > i, .sidenav li > a, .sidenav li > a li > a, .sidenav li > a > i.material-icons {
-  color: #fff;
+#index-banner, 
+main, 
+section {
+    flex-shrink: 0;
 }
 
-.sidenav {
-  background-color: #222;
-}
-
-.page-footer {
-  margin: 0;
+footer.page-footer {
+  margin: 0 !important;
+  margin-top: auto !important;
   padding-top: 0;
 }
 
