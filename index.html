@@ -73,6 +73,20 @@ title: MarioCube - The Premier Wii/GC Site
           display: block !important;
           opacity: 1 !important;
         }
+
+        .shadow-text {
+          text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+        }
+
+        .transparent-collection .collection-item {
+          background-color: rgba(0, 0, 0, 0.6) !important;
+          border-color: rgba(255, 255, 255, 0.1) !important;
+          transition: background-color 0.2s ease;
+        }
+
+        .transparent-collection .collection-item:hover {
+          background-color: rgba(0, 0, 0, 0.8) !important;
+        }
     </style>
     <div class="section no-pad-bot">
       <div class="container">
@@ -143,7 +157,7 @@ title: MarioCube - The Premier Wii/GC Site
     </section>
   </main>
 
-  <section class="grey darken-4 section-padding center-align">
+  <section class="grey darken-4 center-align" style="padding-top: 4rem;">
     <div class="container">
       <div class="row">
         <div class="col s12">
@@ -162,7 +176,7 @@ title: MarioCube - The Premier Wii/GC Site
           </div>
         </div>
         <div class="col s12">
-          <div class="discord-container" style="margin-top: 1rem; padding-bottom: 300px;">
+          <div class="discord-container" style="margin-top: 1rem; padding-bottom: 250px;">
             <iframe src="https://discord.com/widget?id=1458631906315862028&amp;theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" title="MarioCube Discord Widget"></iframe>
           </div>
         </div>
@@ -170,26 +184,25 @@ title: MarioCube - The Premier Wii/GC Site
     </div>
   </section>
 
-  <section id="parallax-section-2" class="parallax-container" style="height: 400px;">
-    <div class="parallax"><img src="images/background2.jpg" alt="MarioCube Background"></div>
-  </section>
-
-  <section class="section-padding center-align" style="background-color: #333;">
-    <div class="container">
-      <div class="row center-align">
-        <div class="col s12">
-          <h2 class="header white-text">What You Can Find Here</h2>
-          <div class="collection z-depth-1" style="border: none; margin: 0 auto; max-width: 800px;">
-            <a href="#!" class="collection-item white-text center-align"><i class="fa-solid fa-screwdriver-wrench left" aria-hidden="true"></i> Development Tools</a>
-            <a href="#!" class="collection-item white-text center-align"><i class="fa-solid fa-code left" aria-hidden="true"></i> Homebrew</a>
-            <a href="#!" class="collection-item white-text center-align"><i class="fa-solid fa-desktop left" aria-hidden="true"></i> PC Applications</a>
-            <a href="#!" class="collection-item white-text center-align"><i class="fa-solid fa-box left" aria-hidden="true"></i> WADs</a>
-            <a href="#!" class="collection-item white-text center-align"><i class="fa-solid fa-font left" aria-hidden="true"></i> Nintendo Fonts</a>
-            <a href="#!" class="collection-item white-text center-align"><i class="fa-solid fa-image left" aria-hidden="true"></i> Nintendo Wallpapers</a>
+  <section id="parallax-section-2" class="parallax-container" style="height: auto; min-height: 450px; padding: 4rem 0;">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center-align">
+          <div class="col s12">
+            <h2 class="header white-text shadow-text" style="font-weight: 700;">What You Can Find Here</h2>
+            <div class="collection z-depth-1 transparent-collection" style="border: none; margin: 0 auto; max-width: 800px; background: transparent;">
+              <a href="#!" class="collection-item white-text center-align"><i class="fa-solid fa-screwdriver-wrench left" aria-hidden="true"></i> Development Tools</a>
+              <a href="#!" class="collection-item white-text center-align"><i class="fa-solid fa-code left" aria-hidden="true"></i> Homebrew</a>
+              <a href="#!" class="collection-item white-text center-align"><i class="fa-solid fa-desktop left" aria-hidden="true"></i> PC Applications</a>
+              <a href="#!" class="collection-item white-text center-align"><i class="fa-solid fa-box left" aria-hidden="true"></i> WADs</a>
+              <a href="#!" class="collection-item white-text center-align"><i class="fa-solid fa-font left" aria-hidden="true"></i> Nintendo Fonts</a>
+              <a href="#!" class="collection-item white-text center-align"><i class="fa-solid fa-image left" aria-hidden="true"></i> Nintendo Wallpapers</a>
+            </div>
+            <h3 class="header light blue-text text-lighten-2 shadow-text" style="margin-top: 2rem; font-size: 1.5rem;">...and much more!</h3>
           </div>
-          <h3 class="header light blue-text text-lighten-2" style="margin-top: 2rem; font-size: 1.5rem;">...and much more!</h3>
         </div>
       </div>
     </div>
+    <div class="parallax"><img src="images/background2.jpg" alt="MarioCube Background"></div>
   </section>
 
