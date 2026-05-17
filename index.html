@@ -26,7 +26,8 @@ title: MarioCube - The Premier Wii/GC Site
         
         /* Logo glow effect */
         .shadowfilter {
-          filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.4));
+          -webkit-filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 1));
+          filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 1));
           max-width: 100%;
           height: auto;
         }
@@ -45,7 +46,7 @@ title: MarioCube - The Premier Wii/GC Site
         .discord-container {
           position: relative;
           width: 100%;
-          padding-bottom: 500px;
+          padding-bottom: 400px;
           height: 0;
         }
 
@@ -78,14 +79,18 @@ title: MarioCube - The Premier Wii/GC Site
           text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
         }
 
-        .transparent-collection .collection-item {
-          background-color: rgba(0, 0, 0, 0.6) !important;
-          border-color: rgba(255, 255, 255, 0.1) !important;
+        .glow-text {
+          text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.4);
+        }
+
+        .solid-collection .collection-item {
+          background-color: #212121 !important; /* Materialize grey darken-4 */
+          border-color: #333 !important;
           transition: background-color 0.2s ease;
         }
 
-        .transparent-collection .collection-item:hover {
-          background-color: rgba(0, 0, 0, 0.8) !important;
+        .solid-collection .collection-item:hover {
+          background-color: #333 !important;
         }
     </style>
     <div class="section no-pad-bot">
@@ -176,7 +181,7 @@ title: MarioCube - The Premier Wii/GC Site
           </div>
         </div>
         <div class="col s12">
-          <div class="discord-container" style="margin-top: 1rem; padding-bottom: 250px;">
+          <div class="discord-container" style="margin-top: 1rem; padding-bottom: 200px;">
             <iframe src="https://discord.com/widget?id=1458631906315862028&amp;theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" title="MarioCube Discord Widget"></iframe>
           </div>
         </div>
@@ -184,21 +189,20 @@ title: MarioCube - The Premier Wii/GC Site
     </div>
   </section>
 
-  <section id="parallax-section-2" class="parallax-container" style="height: auto; min-height: 450px; padding: 4rem 0;">
+  <section id="parallax-section-2" class="parallax-container" style="height: auto; min-height: 450px; padding: 2rem 0;">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center-align">
           <div class="col s12">
             <h2 class="header white-text shadow-text" style="font-weight: 700;">What You Can Find Here</h2>
-            <div class="collection z-depth-1 transparent-collection" style="border: none; margin: 0 auto; max-width: 800px; background: transparent;">
+            <div class="collection z-depth-1 solid-collection" style="border: none; margin: 0 auto; max-width: 800px; background: transparent;">
               <a href="#!" class="collection-item white-text center-align"><i class="fa-solid fa-screwdriver-wrench left" aria-hidden="true"></i> Development Tools</a>
               <a href="#!" class="collection-item white-text center-align"><i class="fa-solid fa-code left" aria-hidden="true"></i> Homebrew</a>
+              <a href="#!" class="collection-item white-text center-align"><i class="fa-solid fa-image left" aria-hidden="true"></i> Nintendo Wallpapers</a>
               <a href="#!" class="collection-item white-text center-align"><i class="fa-solid fa-desktop left" aria-hidden="true"></i> PC Applications</a>
               <a href="#!" class="collection-item white-text center-align"><i class="fa-solid fa-box left" aria-hidden="true"></i> WADs</a>
-              <a href="#!" class="collection-item white-text center-align"><i class="fa-solid fa-font left" aria-hidden="true"></i> Nintendo Fonts</a>
-              <a href="#!" class="collection-item white-text center-align"><i class="fa-solid fa-image left" aria-hidden="true"></i> Nintendo Wallpapers</a>
             </div>
-            <h3 class="header light blue-text text-lighten-2 shadow-text" style="margin-top: 2rem; font-size: 1.5rem;">...and much more!</h3>
+            <h3 class="header light white-text glow-text" style="margin-top: 2rem; font-size: 1.5rem;">...and much more!</h3>
           </div>
         </div>
       </div>

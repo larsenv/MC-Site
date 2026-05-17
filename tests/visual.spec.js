@@ -19,6 +19,6 @@ test('parallax section 2 visibility and content', async ({ page }) => {
   await expect(header).toHaveClass(/shadow-text/);
   
   // Check collection visibility
-  const collection = page.locator('.transparent-collection');
+  const collection = page.locator('.solid-collection');
   await expect(collection).toBeVisible();
 });
