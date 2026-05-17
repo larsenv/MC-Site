@@ -12,7 +12,7 @@ export default defineConfig({
     trace: 'on-first-retry',
   },
   webServer: {
-    command: 'npx http-server _test_site -p 8080',
+    command: 'npx http-server . -p 8080',
     url: 'http://localhost:8080',
     reuseExistingServer: !process.env.CI,
   },
