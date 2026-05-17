@@ -46,6 +46,14 @@ html {
   color: #c0c0c0;
 }
 
+.sidenav li > a > i, .sidenav li > a, .sidenav li > a li > a, .sidenav li > a > i.material-icons {
+  color: #fff;
+}
+
+.sidenav {
+  background-color: #222;
+}
+
 #index-banner, 
 main, 
 section {
