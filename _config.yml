@@ -18,6 +18,15 @@
 title: MarioCube
 email: admin@mariocube.com
 url: "https://mariocube.com/"
+description: >- # this means to ignore newlines until next field
+  MarioCube is the premier repository for Wii and GameCube modding, homebrew, and preservation.
+  Explore our comprehensive collection of files, manuals, and community resources.
+author: MarioCube
+logo: /images/MarioCube.png
+social:
+  name: MarioCube
+  links:
+    - https://discord.gg/mariocube
 
 defaults:
   -
@@ -30,3 +39,4 @@ defaults:
 markdown: kramdown
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
