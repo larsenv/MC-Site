@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'rodin';
-    src: url('https://mariocube.com/css/RodinNTLGPro-DB-AlphaNum.woff2') format('woff2'),
-         url('https://mariocube.com/css/RodinNTLGPro-DB-AlphaNum.woff') format('woff');
+    src: url('https://mariocube.com/css/RodinNTLGPro-DB-Extended.woff2') format('woff2'),
+         url('https://mariocube.com/css/RodinNTLGPro-DB-Extended.woff') format('woff');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'rodin';
-    src: url('https://mariocube.com/css/RodinNTLGPro-B-AlphaNum.woff2') format('woff2'),
-         url('https://mariocube.com/css/RodinNTLGPro-B-AlphaNum.woff') format('woff');
+    src: url('https://mariocube.com/css/RodinNTLGPro-B-Extended.woff2') format('woff2'),
+         url('https://mariocube.com/css/RodinNTLGPro-B-Extended.woff') format('woff');
     font-weight: 700;
 }
 
