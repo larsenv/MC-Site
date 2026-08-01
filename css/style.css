@@ -230,9 +230,9 @@ animation: spin 1s linear infinite;
 }
 @keyframes spin {
 100% {
-    min-height: 100vh;
-    flex-direction: column;
-    margin: 0;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
 }
 
 /* Materialize stuff */

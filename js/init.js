@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+// Standard Konami sequence, with Enter used as the final Start key.
 var konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
 var konamiIndex = 0;
 var _addEvent = function(obj, type, fn) {

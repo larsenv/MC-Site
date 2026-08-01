@@ -35,3 +35,13 @@ test('JSON-LD description is correct', async ({ page }) => {
   });
   expect(jsonLd.description).toBe('The premier repository for Wii and GameCube goodies.');
 });
+
+test('Konami code triggers the barrel roll', async ({ page }) => {
+  await page.addScriptTag({ path: 'js/init.js' });
+
+  for (const key of ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a', 'Enter']) {
+    await page.keyboard.press(key);
+  }
+
+  await expect(page.locator('body')).toHaveClass(/barrel-roll/);
+});
