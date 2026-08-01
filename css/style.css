@@ -436,6 +436,44 @@ transform: rotate(360deg);
   animation: barrelRoll 1s linear;
 }
 
+.feature-grid {
+  display: flex;
+  align-items: stretch;
+}
+
+.feature-grid > .col {
+  display: flex;
+}
+
+.feature-card {
+  width: 100%;
+  min-height: 280px;
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-card h2 {
+  margin: 1.5rem 0 1rem;
+}
+
+.feature-card p {
+  margin-top: 0;
+  max-width: 28rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .feature-grid {
+    display: block;
+  }
+
+  .feature-grid > .col {
+    display: block;
+  }
+}
+
 @-webkit-keyframes barrelRoll {
   100% { -webkit-transform: rotate(360deg); }
 }
