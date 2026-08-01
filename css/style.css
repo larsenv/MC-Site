@@ -429,3 +429,19 @@ animation: spin 1s linear infinite;
 transform: rotate(360deg);
 }
 }
+
+.barrel-roll {
+  -webkit-animation: barrelRoll 1s linear;
+  -moz-animation: barrelRoll 1s linear;
+  animation: barrelRoll 1s linear;
+}
+
+@-webkit-keyframes barrelRoll {
+  100% { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes barrelRoll {
+  100% { -moz-transform: rotate(360deg); }
+}
+@keyframes barrelRoll {
+  100% { transform: rotate(360deg); }
+}
