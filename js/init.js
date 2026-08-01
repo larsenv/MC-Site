@@ -11,16 +11,29 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// Up Down Up Down Left Right Left Right B A Start(Enter)
-const konamiCode = [38, 40, 38, 40, 37, 39, 37, 39, 66, 65, 13];
-let konamiIndex = 0;
-document.addEventListener('keydown', function(e) {
+var konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
+var konamiIndex = 0;
+var _addEvent = function(obj, type, fn) {
+  if (obj.addEventListener) {
+    obj.addEventListener(type, fn, false);
+  } else if (obj.attachEvent) {
+    obj.attachEvent('on' + type, fn);
+  } else {
+    var old = obj['on' + type];
+    obj['on' + type] = function() {
+      if (old) old.apply(this, arguments);
+      fn.apply(this, arguments);
+    };
+  }
+};
+_addEvent(document, 'keydown', function(e) {
+  e = e || window.event;
   if (e.keyCode === konamiCode[konamiIndex]) {
     konamiIndex++;
     if (konamiIndex === konamiCode.length) {
       document.body.classList.add('barrel-roll');
       setTimeout(function() {
-        const rand = Math.random();
+        var rand = Math.random();
         if (rand < 0.1) {
           alert("A barrel roll has occurred. Please refer to the Wii Operations Manual for help troubleshooting.");
         } else if (rand < 0.2) {
