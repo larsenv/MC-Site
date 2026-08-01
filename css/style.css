@@ -443,10 +443,12 @@ transform: rotate(360deg);
 
 .feature-grid > .col {
   display: flex;
+  flex: 1 1 0;
 }
 
 .feature-card {
   width: 100%;
+  height: calc(100% - 1rem);
   min-height: 280px;
   margin: 0.5rem 0;
   display: flex;
@@ -457,6 +459,13 @@ transform: rotate(360deg);
 
 .feature-card h2 {
   margin: 1.5rem 0 1rem;
+}
+
+@media only screen and (min-width: 601px) {
+  .feature-card h2 {
+    font-size: clamp(1.15rem, 1.7vw, 1.5rem) !important;
+    white-space: nowrap;
+  }
 }
 
 .feature-card p {
@@ -471,6 +480,10 @@ transform: rotate(360deg);
 
   .feature-grid > .col {
     display: block;
+  }
+
+  .feature-card {
+    height: auto;
   }
 }
 
