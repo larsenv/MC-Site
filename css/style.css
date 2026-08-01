@@ -437,18 +437,19 @@ transform: rotate(360deg);
 }
 
 .feature-grid {
-  display: flex;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .feature-grid > .col {
   display: flex;
-  flex: 1 1 0;
+  float: none;
+  width: auto;
 }
 
 .feature-card {
   width: 100%;
-  height: calc(100% - 1rem);
+  height: 100%;
   min-height: 280px;
   margin: 0.5rem 0;
   display: flex;
@@ -475,7 +476,8 @@ transform: rotate(360deg);
 
 @media only screen and (max-width: 600px) {
   .feature-grid {
-    display: block;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .feature-grid > .col {
