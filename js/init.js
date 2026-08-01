@@ -31,19 +31,7 @@ _addEvent(document, 'keydown', function(e) {
   if (e.keyCode === konamiCode[konamiIndex]) {
     konamiIndex++;
     if (konamiIndex === konamiCode.length) {
-      document.body.classList.add('barrel-roll');
-      setTimeout(function() {
-        var rand = Math.random();
-        if (rand < 0.1) {
-          alert("A barrel roll has occurred. Please refer to the Wii Operations Manual for help troubleshooting.");
-        } else if (rand < 0.2) {
-          alert("You cannot install Wii WADs on Doom.");
-        } else {
-          alert("You really are that bored, aren't you?");
-        }
-        document.body.classList.remove('barrel-roll');
-      }, 1000);
-      konamiIndex = 0;
+      window.location.href = '/snake';
     }
   } else {
     konamiIndex = 0;

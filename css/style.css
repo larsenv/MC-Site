@@ -230,23 +230,202 @@ animation: spin 1s linear infinite;
 }
 @keyframes spin {
 100% {
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* Materialize stuff */
+
+html {
+  color: #c0c0c0;
+}
+
+.sidenav li > a > i, .sidenav li > a, .sidenav li > a li > a, .sidenav li > a > i.material-icons {
+  color: #fff;
+}
+
+.sidenav {
+  background-color: #222;
+}
+
+#index-banner, 
+main, 
+section {
+    flex-shrink: 0;
+}
+
+footer.page-footer {
+  margin: 0 !important;
+  margin-top: auto !important;
+  padding-top: 0;
+}
+
+.footer-copyright {
+  padding: 0 !important;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.collection .collection-item {
+  background-color: #222;
+  border-bottom: 1px solid #444;
+  padding: 15px 20px;
+  display: block;
+}
+
+.collection.with-header .collection-header {
+  background-color: #222;
+  border-bottom: 1px solid #444;
+}
+
+.blue.darken-3 {
+  background-color: #1565c0 !important;
+}
+.green.accent-4 {
+  background-color: #00c853 !important;
+}
+.orange.accent-4 {
+  background-color: #ffab00 !important;
+}
+.yellow.accent-4 {
+  background-color: #ffd600 !important;
+}
+
+.actually-red {
+  color: #ea454b
+}
+
+.card {
+  background-color: #222;
+}
+
+a {
+  color: #fff;
+}
+
+.collection {
+  background: #222;
+}
+
+nav ul a,
+nav .brand-logo {
+/*  color: #444;*/
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  background-color: #222; /* Fallback color */
+}
+
+#index-banner {
+  background-image: url('../images/background1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#parallax-section-2 {
+  background-image: url('../images/background2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.parallax img {
+  opacity: 0;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  min-width: 100%;
+  display: block;
+}
+
+.parallax-container.small-parallax-container {
+  height: 300px;
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: relative;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+  .shadowfilter {
+    width: 85%;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+.full-height {
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+
+.white-text {
+  color: #fff !important;
+}
+
+/* RiiConnect24 */
+.dropdown-content {
+  z-index: 1000;
+}
+
+.spin  {
+-webkit-animation: spin 1s linear infinite;
+-moz-animation: spin 1s linear infinite;
+animation: spin 1s linear infinite;
+}
+@-moz-keyframes spin {
+100% {
+-moz-transform: rotate(360deg);
+}
+}
+@-webkit-keyframes spin {
+100% {
+-webkit-transform: rotate(360deg);
+}
+}
+@keyframes spin {
+100% {
 -webkit-transform: rotate(360deg);
 transform: rotate(360deg);
 }
-}
-
-.barrel-roll {
-  -webkit-animation: barrelRoll 1s linear;
-  -moz-animation: barrelRoll 1s linear;
-  animation: barrelRoll 1s linear;
-}
-
-@-webkit-keyframes barrelRoll {
-  100% { -webkit-transform: rotate(360deg); }
-}
-@-moz-keyframes barrelRoll {
-  100% { -moz-transform: rotate(360deg); }
-}
-@keyframes barrelRoll {
-  100% { transform: rotate(360deg); }
 }
