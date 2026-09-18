@@ -97,6 +97,9 @@ footer.page-footer {
 .yellow.accent-4 {
   background-color: #ffd600 !important;
 }
+.red.darken-3 {
+  background-color: #b71c1c !important;
+}
 
 .actually-red {
   color: #ea454b
@@ -291,6 +294,9 @@ footer.page-footer {
 }
 .yellow.accent-4 {
   background-color: #ffd600 !important;
+}
+.red.darken-3 {
+  background-color: #b71c1c !important;
 }
 
 .actually-red {
