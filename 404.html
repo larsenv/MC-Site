@@ -59,7 +59,7 @@
 <div id="grid" aria-hidden="true"></div>
 <canvas id="cubes" aria-hidden="true"></canvas>
 
-<div id="banner" class="hud"><div class="panel">Please return to a<br>valid page.</div></div>
+<div id="banner" class="hud"><div class="panel">Please return to a<br>valid page</div></div>
 <nav id="keys" class="hud" aria-label="Navigation">
   <button type="button" class="key b" id="back"><span>Go back</span></button>
   <a class="key a" href="/" id="home"><span>Return to page</span></a>
@@ -129,16 +129,16 @@
     U: ['##....##','##....##','##....##','##....##','##....##','##....##','##....##','##....##','##....##','.######.','..####..'],
     D: ['######..','#######.','##...###','##....##','##....##','##....##','##....##','##....##','##...###','#######.','######..']
   };
-  const GH = 11, GG = 2, LGAP = 2;                       // glyph height, letter gap, line gap (cells)
+  const GH = 11, GG = 2, LGAP = 2, KERN = { F: -2 };   // F's open lower half lets the next letter tuck in                       // glyph height, letter gap, line gap (cells)
   function buildBits() {
     const lines = ['NOT', 'FOUND'], cells = [];
-    const widths = lines.map(t => [...t].reduce((w, ch) => w + GLYPH[ch][0].length, 0) + GG * (t.length - 1));
+    const widths = lines.map(t => [...t].reduce((w, ch, i) => w + GLYPH[ch][0].length + (i < t.length - 1 ? GG + (KERN[ch] || 0) : 0), 0));
     const W = Math.max(...widths), H = 2 * GH + LGAP;
     lines.forEach((t, li) => {
       let x = (W - widths[li]) / 2;                          // both widths are even, so this is a whole number
       for (const ch of t) {
         GLYPH[ch].forEach((row, r) => [...row].forEach((v, c) => { if (v === '#') cells.push([x + c, li * (GH + LGAP) + r]); }));
-        x += GLYPH[ch][0].length + GG;
+        x += GLYPH[ch][0].length + GG + (KERN[ch] || 0);
       }
     });
     return { w: W, h: H, cells };
@@ -203,8 +203,6 @@
       x += (-x) * gt * .96; y += (-bits.h * c * .3 - y) * gt * .96; z *= 1 - gt;
       const m = ease.io(clamp01((t - 2.15 - p.rd) / .75));
       x += (p.tx - x) * m; y += (p.ty - y) * m; z *= 1 - m;
-      const dt = t - (2.15 + p.rd + .75);                             // landed: spring overshoot, then a travelling ripple
-      if (dt > 0) { y -= c * 3.2 * Math.exp(-3.5 * dt) * Math.sin(dt * 13); z += Math.sin(t * 3 + p.tx / c * .45 + p.ty / c * .2) * c * .45 * k; }
       y += bob * m;
       const sc = .3 + .7 * ease.out(clamp01(t / .3));
       const sp1 = (1 - m);
