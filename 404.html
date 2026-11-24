@@ -129,7 +129,7 @@
     U: ['##....##','##....##','##....##','##....##','##....##','##....##','##....##','##....##','##....##','.######.','..####..'],
     D: ['######..','#######.','##...###','##....##','##....##','##....##','##....##','##....##','##...###','#######.','######..']
   };
-  const GH = 11, GG = 2, LGAP = 2, KERN = { F: -2 };   // F's open lower half lets the next letter tuck in                       // glyph height, letter gap, line gap (cells)
+  const GH = 11, GG = 2, LGAP = 2, KERN = {};   // glyph height, letter gap, line gap (cells)
   function buildBits() {
     const lines = ['NOT', 'FOUND'], cells = [];
     const widths = lines.map(t => [...t].reduce((w, ch, i) => w + GLYPH[ch][0].length + (i < t.length - 1 ? GG + (KERN[ch] || 0) : 0), 0));
@@ -168,7 +168,7 @@
       return { tx: (col - bits.w / 2 + .5) * c, ty: (row - bits.h / 2 + .5) * c,
                ra: i / bits.cells.length * 6.2832,                                  // slot on the opening ring
                bx: Math.cos(a) * rad * R * (vw > vh ? .5 : .42), by: Math.sin(a) * rad * R * .36, bz: (Math.random() - .5) * c * 16,
-               dl: Math.random() * .35, rd: row / bits.h * .5 + Math.random() * .12,
+               dl: Math.random() * .35, rd: row / bits.h * .35 + Math.random() * .1,
                ax: Math.random() * 6.28, ay: Math.random() * 6.28, wx: (Math.random() - .5) * 9, wy: (Math.random() - .5) * 9,
                dx: (Math.random() - .5) * c * 3, dy: (Math.random() - .5) * c * 3, ph: Math.random() * 6.28 };
     });
@@ -200,11 +200,11 @@
       x += p.bx * bu; y += p.by * bu; z += p.bz * bu;
       const dr = clamp01((t - 1.1) / .4); x += Math.sin(t * 1.3 + p.ph) * p.dx * dr; y += Math.cos(t * 1.1 + p.ph) * p.dy * dr;
       const gt = ease.io(clamp01((t - 1.75 - p.dl * .5) / .5));
-      x += (-x) * gt * .96; y += (-bits.h * c * .3 - y) * gt * .96; z *= 1 - gt;
-      const m = ease.io(clamp01((t - 2.15 - p.rd) / .75));
+      x -= x * gt * .6; y -= y * gt * .6; z *= 1 - gt * .7;   // the cloud tightens toward the block but stays loose, like the GameCube boot ?
+      const m = ease.io(clamp01((t - 2.05 - p.rd) / .45));
       x += (p.tx - x) * m; y += (p.ty - y) * m; z *= 1 - m;
       y += bob * m;
-      const sc = .3 + .7 * ease.out(clamp01(t / .3));
+      const sc = (.3 + .7 * ease.out(clamp01(t / .3))) * (.6 + .4 * m);   // small loose dots grow to full cubes as they lock in
       const sp1 = (1 - m);
       items.push({ x, y, z, sc, a1: (p.ax + p.wx * t) * sp1, a2: (p.ay + p.wy * t) * sp1 });
     }
